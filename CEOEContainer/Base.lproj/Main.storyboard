@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="703-4V-yAM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="703-4V-yAM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
         <scene sceneID="clB-vc-fyl">
             <objects>
-                <viewController id="703-4V-yAM" customClass="RootViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="703-4V-yAM" customClass="RootViewController" customModule="CEOEContainer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I7W-xW-C47"/>
                         <viewControllerLayoutGuide type="bottom" id="IfR-02-kHw"/>
@@ -21,12 +25,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-101" y="-243"/>
+            <point key="canvasLocation" x="-101.59999999999999" y="-243.32833583208398"/>
         </scene>
-        <!--Data View Controller-->
+        <!--Healthy Life View Controller-->
         <scene sceneID="snT-py-3hH">
             <objects>
-                <viewController storyboardIdentifier="DataViewController" id="S4R-Ja-viH" customClass="DataViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HealthyLifeViewController" id="S4R-Ja-viH" customClass="HealthyLifeViewController" customModule="CEOEContainer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fXf-Jd-eTc"/>
                         <viewControllerLayoutGuide type="bottom" id="EPS-s9-h4K"/>
@@ -36,11 +40,30 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cF2-Le-7mQ">
+                                <rect key="frame" x="20" y="20" width="335" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1b-V9-EN7">
+                                <rect key="frame" x="20" y="44.5" width="335" height="602.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Healthy Life" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEm-Lt-nAT">
+                                        <rect key="frame" x="89" y="225" width="156" height="152"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9n-iX-OFE">
+                                        <rect key="frame" x="23" y="36" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Atrás"/>
+                                        <connections>
+                                            <segue destination="8mw-FH-0NU" kind="showDetail" id="Ae3-eW-d94"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -61,7 +84,155 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="597" y="-243"/>
+            <point key="canvasLocation" x="596" y="-243.32833583208398"/>
+        </scene>
+        <!--Move It View Controller-->
+        <scene sceneID="BMp-8g-b8T">
+            <objects>
+                <viewController storyboardIdentifier="MoveItViewController" id="RwR-KG-iON" customClass="MoveItViewController" customModule="CEOEContainer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkV-h7-6sP"/>
+                        <viewControllerLayoutGuide type="bottom" id="qUP-uF-log"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PyD-6l-S8p" customClass="CoronaView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ag3-e0-0qn" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="814" y="-931"/>
+        </scene>
+        <!--Stress Management View Controller-->
+        <scene sceneID="Oac-la-evf">
+            <objects>
+                <viewController storyboardIdentifier="StressManagementViewController" id="Pua-r1-Inf" customClass="StressManagementViewController" customModule="CEOEContainer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DVf-nx-6aA"/>
+                        <viewControllerLayoutGuide type="bottom" id="jDX-Fz-Luk"/>
+                    </layoutGuides>
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2AD-Zp-1pU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xrw-FE-fjj">
+                                <rect key="frame" x="20" y="20" width="335" height="17"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyW-gB-JDS">
+                                <rect key="frame" x="20" y="45" width="335" height="602"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stress Management" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1q-qU-7MC">
+                                        <rect key="frame" x="89" y="225" width="156" height="152"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7w-h4-geT">
+                                        <rect key="frame" x="31" y="35" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Atrás"/>
+                                        <connections>
+                                            <segue destination="8mw-FH-0NU" kind="showDetail" id="gBI-th-9Fk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xrw-FE-fjj" firstAttribute="leading" secondItem="2AD-Zp-1pU" secondAttribute="leading" constant="20" symbolic="YES" id="0cK-er-ccX"/>
+                            <constraint firstAttribute="trailing" secondItem="Xrw-FE-fjj" secondAttribute="trailing" constant="20" symbolic="YES" id="1fL-MH-Ui5"/>
+                            <constraint firstAttribute="trailing" secondItem="dyW-gB-JDS" secondAttribute="trailing" constant="20" symbolic="YES" id="1uG-6G-Xda"/>
+                            <constraint firstAttribute="bottom" secondItem="dyW-gB-JDS" secondAttribute="bottom" constant="20" symbolic="YES" id="LN9-cm-4Wx"/>
+                            <constraint firstItem="Xrw-FE-fjj" firstAttribute="top" secondItem="2AD-Zp-1pU" secondAttribute="top" constant="20" symbolic="YES" id="WTN-4q-TTs"/>
+                            <constraint firstItem="dyW-gB-JDS" firstAttribute="leading" secondItem="2AD-Zp-1pU" secondAttribute="leading" constant="20" symbolic="YES" id="lMF-4f-LFa"/>
+                            <constraint firstItem="dyW-gB-JDS" firstAttribute="top" secondItem="Xrw-FE-fjj" secondAttribute="bottom" constant="8" symbolic="YES" id="oDk-Ca-bse"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="Xrw-FE-fjj" id="Dkf-lw-gxs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIC-8w-rVm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="431"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="iYT-5L-htQ">
+            <objects>
+                <viewController storyboardIdentifier="DataViewController" id="8mw-FH-0NU" customClass="DataViewController" customModule="CEOEContainer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eol-Qx-gUf"/>
+                        <viewControllerLayoutGuide type="bottom" id="L70-g6-s4S"/>
+                    </layoutGuides>
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pPP-sO-Hwo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Xn-RG-Qbs">
+                                <rect key="frame" x="20" y="20" width="335" height="17"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRV-mV-CUL">
+                                <rect key="frame" x="20" y="45" width="335" height="602"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7G-N1-dzc">
+                                        <rect key="frame" x="93" y="121" width="149" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Move IT"/>
+                                        <connections>
+                                            <segue destination="RwR-KG-iON" kind="showDetail" id="RlH-C7-jhJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntE-CP-54U">
+                                        <rect key="frame" x="93" y="236" width="149" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Healthy Life"/>
+                                        <connections>
+                                            <segue destination="S4R-Ja-viH" kind="showDetail" id="lig-zf-nvz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kId-D0-EBM">
+                                        <rect key="frame" x="61" y="334" width="212" height="114"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Stress Management"/>
+                                        <connections>
+                                            <segue destination="Pua-r1-Inf" kind="showDetail" id="tGX-Ei-ldH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uRV-mV-CUL" firstAttribute="leading" secondItem="pPP-sO-Hwo" secondAttribute="leading" constant="20" symbolic="YES" id="1Pu-6I-21Q"/>
+                            <constraint firstAttribute="trailing" secondItem="uRV-mV-CUL" secondAttribute="trailing" constant="20" symbolic="YES" id="3tt-VR-yBl"/>
+                            <constraint firstItem="uRV-mV-CUL" firstAttribute="top" secondItem="6Xn-RG-Qbs" secondAttribute="bottom" constant="8" symbolic="YES" id="CD2-Jz-ff9"/>
+                            <constraint firstAttribute="bottom" secondItem="uRV-mV-CUL" secondAttribute="bottom" constant="20" symbolic="YES" id="LpY-ex-eil"/>
+                            <constraint firstItem="6Xn-RG-Qbs" firstAttribute="leading" secondItem="pPP-sO-Hwo" secondAttribute="leading" constant="20" symbolic="YES" id="aZT-T8-rQ2"/>
+                            <constraint firstItem="6Xn-RG-Qbs" firstAttribute="top" secondItem="pPP-sO-Hwo" secondAttribute="top" constant="20" symbolic="YES" id="okn-Ty-wne"/>
+                            <constraint firstAttribute="trailing" secondItem="6Xn-RG-Qbs" secondAttribute="trailing" constant="20" symbolic="YES" id="vLf-XP-3ba"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="6Xn-RG-Qbs" id="5rp-Cg-n6L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XF0-nK-cfY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1380" y="-268.51574212893553"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ae3-eW-d94"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA60E6C51DD23FB5004D8A65 /* MoveItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60E6C41DD23FB5004D8A65 /* MoveItViewController.swift */; };
+		FA60E6C71DD23FC6004D8A65 /* HealthyLifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60E6C61DD23FC6004D8A65 /* HealthyLifeViewController.swift */; };
+		FA60E6C91DD23FDE004D8A65 /* StressManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60E6C81DD23FDE004D8A65 /* StressManagementViewController.swift */; };
 		FA91B3741DD23B6B0069C742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91B3731DD23B6B0069C742 /* AppDelegate.swift */; };
 		FA91B3761DD23B6B0069C742 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91B3751DD23B6B0069C742 /* RootViewController.swift */; };
 		FA91B3781DD23B6B0069C742 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91B3771DD23B6B0069C742 /* DataViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA60E6C41DD23FB5004D8A65 /* MoveItViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveItViewController.swift; sourceTree = "<group>"; };
+		FA60E6C61DD23FC6004D8A65 /* HealthyLifeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthyLifeViewController.swift; sourceTree = "<group>"; };
+		FA60E6C81DD23FDE004D8A65 /* StressManagementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StressManagementViewController.swift; sourceTree = "<group>"; };
 		FA91B3701DD23B6B0069C742 /* CEOEContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CEOEContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA91B3731DD23B6B0069C742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA91B3751DD23B6B0069C742 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +115,9 @@
 				FA91B37E1DD23B6B0069C742 /* Assets.xcassets */,
 				FA91B3801DD23B6B0069C742 /* LaunchScreen.storyboard */,
 				FA91B3831DD23B6B0069C742 /* Info.plist */,
+				FA60E6C41DD23FB5004D8A65 /* MoveItViewController.swift */,
+				FA60E6C61DD23FC6004D8A65 /* HealthyLifeViewController.swift */,
+				FA60E6C81DD23FDE004D8A65 /* StressManagementViewController.swift */,
 			);
 			path = CEOEContainer;
 			sourceTree = "<group>";
@@ -268,6 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA60E6C51DD23FB5004D8A65 /* MoveItViewController.swift in Sources */,
+				FA60E6C91DD23FDE004D8A65 /* StressManagementViewController.swift in Sources */,
+				FA60E6C71DD23FC6004D8A65 /* HealthyLifeViewController.swift in Sources */,
 				FA91B3761DD23B6B0069C742 /* RootViewController.swift in Sources */,
 				FA91B37A1DD23B6B0069C742 /* ModelController.swift in Sources */,
 				FA91B3781DD23B6B0069C742 /* DataViewController.swift in Sources */,
@@ -522,6 +534,7 @@
 				FA91B39E1DD23B6C0069C742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA91B39F1DD23B6C0069C742 /* Build configuration list for PBXNativeTarget "CEOEContainerTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +543,7 @@
 				FA91B3A11DD23B6C0069C742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA91B3A21DD23B6C0069C742 /* Build configuration list for PBXNativeTarget "CEOEContainerUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +552,7 @@
 				FA91B3A41DD23B6C0069C742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

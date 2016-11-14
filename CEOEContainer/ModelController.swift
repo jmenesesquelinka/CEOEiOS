@@ -37,9 +37,9 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         }
 
         // Create a new view controller and pass suitable data.
-        let dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
-        dataViewController.dataObject = self.pageData[index]
-        return dataViewController
+        let DataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
+        DataViewController.dataObject = self.pageData[index]
+        return DataViewController
     }
 
     func indexOfViewController(_ viewController: DataViewController) -> Int {
